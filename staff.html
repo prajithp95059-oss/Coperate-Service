@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly — Professional Business Solutions</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap">
+</head>
+<body>
+
+<div id="scroll-bar"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Header -->
+<header>
+  <nav>
+    <div class="logo">Stackly <span></span></div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul>
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./careers.html">Careers</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./login.html" class="nav-login">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <!-- Animated particles canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Floating geometric shapes -->
+  <div class="hero-geo geo-1"></div>
+  <div class="hero-geo geo-2"></div>
+  <div class="hero-geo geo-3"></div>
+  <div class="hero-geo geo-4"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Trusted by 500+ Companies Worldwide
+    </div>
+    <h1>Professional <em>Business</em><br>Solutions That Scale</h1>
+    <p>We empower enterprises with strategic consulting, digital transformation, and cutting-edge technology solutions across 20+ countries.</p>
+    <div class="hero-btns">
+      <a href="services.html" class="btn-primary">
+        <span>Explore Services</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="contact.html" class="btn-outline">Get In Touch</a>
+    </div>
+
+    <!-- Floating metrics cards -->
+    <div class="hero-floating-cards">
+      <div class="float-card float-card-1">
+        <div class="fc-icon">📈</div>
+        <div class="fc-text">
+          <strong>+97%</strong>
+          <span>Client Satisfaction</span>
+        </div>
+      </div>
+      <div class="float-card float-card-2">
+        <div class="fc-icon">🌍</div>
+        <div class="fc-text">
+          <strong>20+</strong>
+          <span>Countries Served</span>
+        </div>
+      </div>
+      <div class="float-card float-card-3">
+        <div class="fc-icon">⚡</div>
+        <div class="fc-text">
+          <strong>48h</strong>
+          <span>Avg. Response Time</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero image collage -->
+  <div class="hero-visual">
+    <div class="hv-img hv-img-1">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="Team collaboration">
+    </div>
+    <div class="hv-img hv-img-2">
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80" alt="Business strategy">
+    </div>
+    <div class="hv-img hv-img-3">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80" alt="Team meeting">
+    </div>
+    <div class="hv-badge-award">
+      <span>🏆</span>
+      <p>Best Consulting Firm 2024</p>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-dot"></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>Business Consulting</span>
+    <span>Digital Marketing</span>
+    <span>Technology Solutions</span>
+    <span>Financial Advisory</span>
+    <span>HR Management</span>
+    <span>Legal Services</span>
+    <span>500+ Happy Clients</span>
+    <span>20+ Countries</span>
+    <span>120+ Projects Delivered</span>
+  </div>
+</div>
+
+<!-- Stats -->
+<section class="stats-section">
+  <div class="stats-bg-pattern"></div>
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-icon">🤝</div>
+      <h2 class="stat-num" data-val="500" data-suffix="+">0+</h2>
+      <p>Global Clients</p>
+      <div class="stat-bar"><div class="stat-bar-fill" style="--w:85%"></div></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">🚀</div>
+      <h2 class="stat-num" data-val="120" data-suffix="+">0+</h2>
+      <p>Projects Delivered</p>
+      <div class="stat-bar"><div class="stat-bar-fill" style="--w:72%"></div></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">👥</div>
+      <h2 class="stat-num" data-val="50" data-suffix="+">0+</h2>
+      <p>Expert Team</p>
+      <div class="stat-bar"><div class="stat-bar-fill" style="--w:60%"></div></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">🌐</div>
+      <h2 class="stat-num" data-val="20" data-suffix="+">0+</h2>
+      <p>Countries Served</p>
+      <div class="stat-bar"><div class="stat-bar-fill" style="--w:45%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services-section">
+  <div class="services-header fade-up">
+    <span class="section-label">What We Do</span>
+    <h2 class="section-title">Comprehensive Business Services</h2>
+    <p class="section-sub">From strategy to execution, we deliver end-to-end solutions that drive measurable growth.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up stagger-1" data-color="#0b1f3a">
+      <div class="sc-img">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80" alt="Business Consulting">
+        <div class="sc-overlay"></div>
+      </div>
+      <div class="service-icon">💼</div>
+      <h3>Business Consulting</h3>
+      <p>Transform your operations with strategic insights from our experienced advisory team.</p>
+      <a href="services.html">Learn More <span>→</span></a>
+    </div>
+    <div class="service-card fade-up stagger-2" data-color="#1e8a7a">
+      <div class="sc-img">
+        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=400&q=80" alt="Digital Marketing">
+        <div class="sc-overlay"></div>
+      </div>
+      <div class="service-icon">📊</div>
+      <h3>Digital Marketing</h3>
+      <p>Data-driven campaigns that elevate your brand and deliver real ROI across every channel.</p>
+      <a href="services.html">Learn More <span>→</span></a>
+    </div>
+    <div class="service-card fade-up stagger-3" data-color="#112d52">
+      <div class="sc-img">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="Technology Solutions">
+        <div class="sc-overlay"></div>
+      </div>
+      <div class="service-icon">💻</div>
+      <h3>Technology Solutions</h3>
+      <p>Custom software, cloud infrastructure, and IT consulting powering modern enterprises.</p>
+      <a href="services.html">Learn More <span>→</span></a>
+    </div>
+    <div class="service-card fade-up stagger-4" data-color="#c8a96e">
+      <div class="sc-img">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80" alt="Financial Advisory">
+        <div class="sc-overlay"></div>
+      </div>
+      <div class="service-icon">📈</div>
+      <h3>Financial Advisory</h3>
+      <p>Strategic financial planning and risk management for sustainable long-term success.</p>
+      <a href="services.html">Learn More <span>→</span></a>
+    </div>
+    <div class="service-card fade-up stagger-5" data-color="#1e8a7a">
+      <div class="sc-img">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&q=80" alt="HR Management">
+        <div class="sc-overlay"></div>
+      </div>
+      <div class="service-icon">🤝</div>
+      <h3>HR Management</h3>
+      <p>End-to-end talent acquisition, workforce planning, and organizational development.</p>
+      <a href="services.html">Learn More <span>→</span></a>
+    </div>
+    <div class="service-card fade-up stagger-6" data-color="#0b1f3a">
+      <div class="sc-img">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&q=80" alt="Legal Services">
+        <div class="sc-overlay"></div>
+      </div>
+      <div class="service-icon">⚖️</div>
+      <h3>Legal Services</h3>
+      <p>Compliance, contracts, and corporate legal guidance you can rely on every step.</p>
+      <a href="services.html">Learn More <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us — split layout with image -->
+<section class="why-section">
+  <div class="why-image-col fade-in">
+    <div class="why-img-stack">
+      <img class="why-img-main" src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&q=80" alt="Team at work">
+      <img class="why-img-accent" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=300&q=80" alt="Strategy session">
+      <div class="why-img-badge">
+        <span>🏅</span>
+        <div>
+          <strong>97%</strong>
+          <p>Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="why-content-col">
+    <div class="fade-up">
+      <span class="section-label">Why Stackly</span>
+      <h2 class="section-title">The Stackly<br>Difference</h2>
+      <p class="section-sub" style="text-align:left;margin:0 0 40px;">We combine global expertise with local insight to deliver outcomes that matter.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up stagger-1">
+        <div class="why-number">01</div>
+        <h3>Expert Team</h3>
+        <p>50+ seasoned professionals with deep industry knowledge across finance, tech, law, and strategy.</p>
+      </div>
+      <div class="why-card fade-up stagger-2">
+        <div class="why-number">02</div>
+        <h3>Proven Results</h3>
+        <p>120+ successful projects delivered globally with measurable impact and satisfaction above 97%.</p>
+      </div>
+      <div class="why-card fade-up stagger-3">
+        <div class="why-number">03</div>
+        <h3>24/7 Support</h3>
+        <p>Round-the-clock dedicated support ensuring your business operations never face a standstill.</p>
+      </div>
+      <div class="why-card fade-up stagger-4">
+        <div class="why-number">04</div>
+        <h3>Custom Solutions</h3>
+        <p>No templates — every strategy is bespoke, built around your unique business challenges and goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process-section">
+  <div class="fade-up" style="text-align:center; margin-bottom: 0;">
+    <span class="section-label">How We Work</span>
+    <h2 class="section-title">Our Proven Process</h2>
+    <p class="section-sub" style="margin: 0 auto;">A structured approach that ensures clarity, accountability, and measurable outcomes every time.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step fade-up stagger-1">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80" alt="Discovery">
+        <div class="step-img-overlay"></div>
+      </div>
+      <div class="step-num">01</div>
+      <h3>Discovery</h3>
+      <p>We deep-dive into your business to understand goals, challenges, and opportunities.</p>
+    </div>
+    <div class="process-step fade-up stagger-2">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="Strategy">
+        <div class="step-img-overlay"></div>
+      </div>
+      <div class="step-num">02</div>
+      <h3>Strategy</h3>
+      <p>We craft a tailored roadmap aligned with your objectives and market conditions.</p>
+    </div>
+    <div class="process-step fade-up stagger-3">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="Execution">
+        <div class="step-img-overlay"></div>
+      </div>
+      <div class="step-num">03</div>
+      <h3>Execution</h3>
+      <p>Our expert teams implement solutions with precision, agility, and transparency.</p>
+    </div>
+    <div class="process-step fade-up stagger-4">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&q=80" alt="Optimize">
+        <div class="step-img-overlay"></div>
+      </div>
+      <div class="step-num">04</div>
+      <h3>Optimize</h3>
+      <p>We continuously monitor, measure, and refine for sustained long-term growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+  <div class="testi-bg-img">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&q=80" alt="Office background">
+    <div class="testi-bg-overlay"></div>
+  </div>
+  <div class="testi-inner fade-up" style="text-align:center; margin-bottom: 0;">
+    <span class="section-label" style="color:var(--accent)">Client Stories</span>
+    <h2 class="section-title" style="color:#fff">What Our Clients Say</h2>
+    <p class="section-sub" style="margin: 0 auto; color:rgba(255,255,255,0.65);">Real results. Real businesses. Real impact.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testi-card fade-up stagger-1">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p>Stackly completely transformed how we approach our operations. Their consulting team delivered a strategy that increased efficiency by 40% within the first quarter.</p>
+      <div class="testi-author">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="James Mitchell" class="testi-photo">
+        <div>
+          <h4>James Mitchell</h4>
+          <span>CEO, Nexus Ventures</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card testi-card-featured fade-up stagger-2">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p>The digital marketing team at Stackly drove a 3x increase in qualified leads within 90 days. Their data-driven approach is unlike anything we've experienced before.</p>
+      <div class="testi-author">
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Sarah Reynolds" class="testi-photo">
+        <div>
+          <h4>Sarah Reynolds</h4>
+          <span>CMO, Apex Industries</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card fade-up stagger-3">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p>From technology architecture to implementation, Stackly's tech team was exceptional. They delivered our enterprise platform on time and significantly under budget.</p>
+      <div class="testi-author">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Arjun Kumar" class="testi-photo">
+        <div>
+          <h4>Arjun Kumar</h4>
+          <span>CTO, GlobalEdge Corp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industries -->
+<section class="industries-section">
+  <div class="fade-up">
+    <span class="section-label">Industries We Serve</span>
+    <h2 class="section-title">Across Every Sector</h2>
+  </div>
+  <div class="industries-grid">
+    <div class="industry-item fade-up stagger-1">
+      <div class="ind-img">
+        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&q=80" alt="Finance">
+        <div class="ind-overlay"></div>
+      </div>
+      <span>🏦</span><p>Finance</p>
+    </div>
+    <div class="industry-item fade-up stagger-2">
+      <div class="ind-img">
+        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=300&q=80" alt="Healthcare">
+        <div class="ind-overlay"></div>
+      </div>
+      <span>🏥</span><p>Healthcare</p>
+    </div>
+    <div class="industry-item fade-up stagger-3">
+      <div class="ind-img">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=300&q=80" alt="Real Estate">
+        <div class="ind-overlay"></div>
+      </div>
+      <span>🏗️</span><p>Real Estate</p>
+    </div>
+    <div class="industry-item fade-up stagger-4">
+      <div class="ind-img">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&q=80" alt="Retail">
+        <div class="ind-overlay"></div>
+      </div>
+      <span>🛒</span><p>Retail</p>
+    </div>
+    <div class="industry-item fade-up stagger-5">
+      <div class="ind-img">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&q=80" alt="Manufacturing">
+        <div class="ind-overlay"></div>
+      </div>
+      <span>🏭</span><p>Manufacturing</p>
+    </div>
+    <div class="industry-item fade-up stagger-6">
+      <div class="ind-img">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&q=80" alt="Travel">
+        <div class="ind-overlay"></div>
+      </div>
+      <span>✈️</span><p>Travel</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-img">
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1800&q=80" alt="CTA background">
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="fade-up cta-inner">
+    <div class="cta-icon-ring">🚀</div>
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join 500+ companies that trust Stackly to drive growth, efficiency, and innovation.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-primary">
+        <span>Start a Conversation</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="services.html" class="btn-outline">View Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Stackly <span></span></span>
+      <p>A world-class professional services company helping businesses grow, innovate, and lead across every sector and geography.</p>
+      <div class="footer-socials">
+        <a class="social-btn" href="#">in</a>
+        <a class="social-btn" href="#">𝕏</a>
+        <a class="social-btn" href="#">f</a>
+        <a class="social-btn" href="#">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h4>Contact</h4>
+      <p><span>📍</span> 123 Business Street, New York, USA</p>
+      <p><span>✉️</span> info@stackly.com</p>
+      <p><span>📞</span> +1 234 567 890</p>
+      <p><span>🕐</span> Mon–Fri, 9AM–6PM EST</p>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Newsletter</h4>
+      <p style="font-size:13px; color:rgba(255,255,255,0.45); margin-bottom:0;">Get insights delivered to your inbox weekly.</p>
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Stackly. All Rights Reserved.</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+<script>
+
+
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.12;
+  ringY += (mouseY - ringY) * 0.12;
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top = ringY + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .service-card, .why-card').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursorRing.classList.add('hovered'); cursorDot.classList.add('hovered'); });
+  el.addEventListener('mouseleave', () => { cursorRing.classList.remove('hovered'); cursorDot.classList.remove('hovered'); });
+});
+
+// ===== Particles Canvas =====
+const canvas = document.getElementById('particles-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particles = [];
+for (let i = 0; i < 60; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2 + 0.5,
+    dx: (Math.random() - 0.5) * 0.4,
+    dy: (Math.random() - 0.5) * 0.4,
+    opacity: Math.random() * 0.5 + 0.1
+  });
+}
+
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(200,169,110,${p.opacity})`;
+    ctx.fill();
+    p.x += p.dx; p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  });
+
+  // Draw connecting lines
+  particles.forEach((p, i) => {
+    particles.slice(i + 1).forEach(p2 => {
+      const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+      if (dist < 100) {
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.strokeStyle = `rgba(200,169,110,${0.12 * (1 - dist / 100)})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+    });
+  });
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+
+// ===== Tilt effect on service cards =====
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `perspective(800px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+// ===== Stat bars animate on scroll =====
+const statBars = document.querySelectorAll('.stat-bar-fill');
+const barObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.width = e.target.style.getPropertyValue('--w') || '70%';
+      barObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+statBars.forEach(b => barObs.observe(b));
+</script>
+</body>
+</html>
